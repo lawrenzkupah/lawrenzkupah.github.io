@@ -43,11 +43,11 @@ body{
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 50;
+    padding: 0;
     overflow: hidden;
     background-color: #1D263B;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 35%;
+    padding-right: 35%;
   }
   
   li a {
@@ -65,5 +65,5 @@ ul {
     background-color: #48A9A6;
   }
   body{
-      background-color: #EBEEFF;  /*CHANGE!*/
+      background-color: #ffffff;  /*CHANGE!*/
   }
