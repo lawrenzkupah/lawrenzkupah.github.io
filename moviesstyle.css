@@ -1,0 +1,211 @@
+body{
+    background-color: "DEE4E7";
+    font-family: sans-serif
+
+}
+#title{
+    color: #1D263B;
+    text-align: center;
+    font-size: 60px;
+    font: Georgia;
+    padding-bottom: 30px;
+}
+table{
+    border-spacing: 5px 4rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+img{
+    height: 200px;  /* make actual pixel values so it dont change based on size of window */
+    width: 133.3px; /* make on click also direct to letterboxd page? */
+    display: block;
+    box-shadow: 1px 1px 8px #1D263B;
+}
+#two {
+    padding-left: 50px;
+    padding-right: 50px;      /* make relative to title size? ...  although will likely cause problems down the line */
+}
+#two a{
+    text-decoration: none;
+    color: #1D263B;
+    white-space: nowrap;
+    font-size: 18px;
+}
+#two a:hover{ 
+    animation-name: twoHover;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes twoHover{
+    from{text-shadow: white;}  
+    to {text-shadow: .01px .01px .1px #1D263B;}
+}
+#three div{
+    overflow: hidden;
+
+}
+#navbar{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  /*js to make position: fixed */
+  /*js to set it to top. */
+}
+
+#navbar li{
+    float:left;
+    padding-left:11.42%;
+}
+#navbar li a:hover{
+    background-color: #DFDFDF; 
+    display:
+}
+#navbar li a{
+    display: block;
+    color: #1D263B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#current{
+    font-size: 300px;
+    justify-content: center;
+    display:flex;
+    color:#1D263B;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+#subscript{
+    font-size: 17px;
+    justify-content: center;
+    color:#1D263B;
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+#top{
+    text-decoration: none;
+    justify-content: center;
+}
+#randommovie{
+    margin: 25px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+}
+#randommovie ul{
+    position: relative;
+    list-style-type: none;
+    margin-left: 150%;
+}
+#spooky{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        right: -30px;
+        bottom: 20px;
+}
+#spooky li{
+    float:left;
+    padding-right: 10px;
+}
+/*button effects */
+#randomgen{
+    position: relative;
+    left: 41.9%;
+    bottom: -10px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #48A9A6;
+    padding: 6px 28px;
+}
+.dropbtn {
+    position: relative;
+    border: 2px solid #48A9A6;
+    padding: 6px 28px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    left: 72.0%;
+    bottom: -10px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #48A9A6;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    right: -1.6%;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120.35px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid #48A9A6;
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 6px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color:rgb(218, 218, 218)}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #48A9A6;
+  }
+#randomgen:hover{ 
+    animation-name: button1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes button1{
+    from{background-color: white;}   /* when in spooky mode this dosent look great*/
+    to {background-color: #48A9A6;}
+    
+}
+/*button effects */
+#spookybutton{
+    background-color: white;
+    border: none;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 6px 28px;
+}
+#spookybutton:hover{
+    animation-name: button2;
+    animation-duration: 20s;
+}
+@keyframes button2{
+    from{background-color: white;}
+    to{background-color: black;}
+    from{color: #1D263B;}
+    to{color:white;}
+}

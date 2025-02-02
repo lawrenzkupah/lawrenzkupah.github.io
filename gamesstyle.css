@@ -1,0 +1,15 @@
+#subscript{
+    font-size: 17px;
+    justify-content: center;
+    color:#1D263B;
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+#current{
+    font-size: 300px;
+    justify-content: center;
+    display:flex;
+    color:#1D263B;
+    padding: 0px;
+}
