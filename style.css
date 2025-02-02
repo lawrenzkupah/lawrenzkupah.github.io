@@ -1,0 +1,43 @@
+body{
+  font-family: sans-serif;
+}
+
+#homepage{
+  float:left;
+  position: relative;
+}
+
+#title{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D263B;
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #48A9A6;
+  }
+  body{
+      background-color: #EBEEFF;  /*CHANGE!*/
+  }
