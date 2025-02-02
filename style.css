@@ -67,3 +67,8 @@ ul {
   body{
       background-color: #ffffff;  /*CHANGE!*/
   }
+
+  #selection-box{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
