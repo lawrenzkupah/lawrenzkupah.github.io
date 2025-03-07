@@ -10,3 +10,15 @@ h5{
 header{
     text-align: center;
 }
+.home-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: #2d716f;
+}

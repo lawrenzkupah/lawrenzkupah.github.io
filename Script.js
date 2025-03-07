@@ -1,6 +1,18 @@
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    let diary_link = document.getElementById('password_protect')  // this is for password protection into diary
+    diary_link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default action (navigation)
+        let user_prompt = prompt("Password:")
+        if(user_prompt == 'friend'){
+            window.location.href = "open_diary.html"
+        }
+        else {
+            alert("invalid password")
+        }
+
+    })
     let val = document.getElementById('randomgen');
     val.addEventListener("click", ()=>{
         randomizer();
