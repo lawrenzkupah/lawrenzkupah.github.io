@@ -1,0 +1,12 @@
+
+p {
+    margin-bottom: 5px; /* Adds space below each paragraph */
+    padding-left: 20px; /* Adds some space inside the paragraph (optional) */
+}
+
+h5{
+    padding-left: 10px;
+}
+header{
+    text-align: center;
+}
