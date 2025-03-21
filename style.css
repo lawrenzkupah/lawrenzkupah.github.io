@@ -98,4 +98,29 @@ ul {
 
 .top-right-link a:hover {
     color: #48A9A6; /* Change color on hover */
+}        /* Style for the social sidebar */
+#social-sidebar {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  width: auto;
+  background: none;
+}
+#social-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#social-sidebar ul li {
+  margin: 10px 0;
+}
+#social-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+#social-sidebar ul li a i {
+  margin-right: 8px;
 }

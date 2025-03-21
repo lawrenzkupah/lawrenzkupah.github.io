@@ -1,18 +1,46 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Check if the page is '/open_diary.html'
-    if (window.location.pathname === '/open_diary.html') {
-    // if true block out the screen
-    let overlay = document.getElementById('overlay');
-    while(true){
-        let user_prompt = prompt("Password:");
-        if(user_prompt === 'friend'){
-            overlay.style.display = 'none';
-            break;
+            // Check if the current page is 'open_diary.html'
+            if (window.location.pathname === '/open_diary.html') {
+        
+                // Create the overlay div
+                let overlay = document.createElement('div');
+        
+                // Apply styles using JavaScript (or you can use a class from your CSS file)
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+                overlay.style.zIndex = '9999'; // Make sure it's on top of everything
+        
+                // Append the overlay to the body
+                document.body.appendChild(overlay);
+        
+                // Function to handle the prompt
+                function showPrompt() {
+                    return new Promise((resolve) => {
+                        setTimeout(() => {
+                            let user_prompt = prompt("Enter password:");
+                            resolve(user_prompt); // Resolve the prompt value
+                        }, 10); // Add a small timeout to make sure the overlay is visible first
+                    });
+                }
+        
+                // Use async/await to ensure the prompt is shown after the overlay is displayed
+                (async function() {
+                    let user_prompt = await showPrompt(); // Wait for user input
+        
+                    if (user_prompt === "friend") {
+                        overlay.style.display = 'none'; // Hide the overlay if the password is correct
+                        alert(":)");
+                    } else {
+                        window.location.href = "index.html"
+                    }
+                })();
             }
-        }
-    }   
-
+  
     // Randomizer Button Event Listener
     let val = document.getElementById('randomgen');
     val.addEventListener("click", () => {
