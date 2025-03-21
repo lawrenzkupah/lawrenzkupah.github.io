@@ -1,4 +1,12 @@
-
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    z-index: 9999; /* Make sure it's on top of everything */
+}
 p {
     margin-bottom: 5px; /* Adds space below each paragraph */
     padding-left: 20px; /* Adds some space inside the paragraph (optional) */
