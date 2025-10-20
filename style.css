@@ -223,3 +223,13 @@ header {
       font-size: 1.4rem;
   }
 }
+.top-left-image {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
